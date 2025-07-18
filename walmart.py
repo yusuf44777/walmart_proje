@@ -33,7 +33,7 @@ if selected_model == "Google Gemini":
     
     if api_key:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-2.0')
+        model = genai.GenerativeModel('gemini-2.5-flash')
 
 else:  # OpenAI ChatGPT
     api_key = st.sidebar.text_input(
